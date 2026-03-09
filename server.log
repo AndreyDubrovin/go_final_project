@@ -1,0 +1,90 @@
+SERVER: 2026/03/09 14:36:37 task.go:109: Ошибка в расчётах NextDate: для правила W не указаны дни недели
+SERVER: 2026/03/09 14:36:37 task.go:109: Ошибка в расчётах NextDate: ошибка в формате: ooops
+SERVER: 2026/03/09 14:36:37 nextdate.go:32: параметр repeat пустой
+SERVER: 2026/03/09 14:36:37 nextdate.go:39: Ошибка в NextDate: ошибка в формате: k
+SERVER: 2026/03/09 14:36:37 nextdate.go:39: Ошибка в NextDate: ошибка в формате: ooops
+SERVER: 2026/03/09 14:36:37 nextdate.go:39: Ошибка в NextDate: ошибка парсинга date: parsing time "15000156": day out of range
+SERVER: 2026/03/09 14:36:37 nextdate.go:39: Ошибка в NextDate: ошибка парсинга date: parsing time "ooops" as "20060102": cannot parse "ooops" as "2006"
+SERVER: 2026/03/09 14:36:37 nextdate.go:39: Ошибка в NextDate: для правила d требуется указать интервал
+SERVER: 2026/03/09 14:36:37 nextdate.go:39: Ошибка в NextDate: превышен максимально допустимый интервал (400)
+SERVER: 2026/03/09 14:36:37 nextdate.go:39: Ошибка в NextDate: недопустимое значение: 40
+SERVER: 2026/03/09 14:36:37 nextdate.go:39: Ошибка в NextDate: недопустимое значение: -3
+SERVER: 2026/03/09 14:36:37 nextdate.go:39: Ошибка в NextDate: недопустимое значение в дне недели: 8
+SERVER: 2026/03/09 14:36:37 task.go:76: Не указан идентификатор
+SERVER: 2026/03/09 14:36:37 task.go:232: Ошибка в расчётах NextDate: ошибка в формате: ooops
+SERVER: 2026/03/09 14:36:37 task.go:70: Ошибка получения задач: задача с ID 11 не найдена
+SERVER: 2026/03/09 14:36:37 task.go:70: Ошибка получения задач: задача с ID 13 не найдена
+SERVER: 2026/03/09 14:36:37 task.go:194: Не указан идентификатор
+SERVER: 2026/03/09 14:36:37 task.go:199: Ошибка удаления задачи: задача с ID wjhgese не найдена
+SERVER: 2026/03/09 14:38:50 task.go:109: Ошибка в расчётах NextDate: для правила W не указаны дни недели
+SERVER: 2026/03/09 14:38:50 task.go:109: Ошибка в расчётах NextDate: ошибка в формате: ooops
+SERVER: 2026/03/09 14:38:50 nextdate.go:32: параметр repeat пустой
+SERVER: 2026/03/09 14:38:50 nextdate.go:39: Ошибка в NextDate: ошибка в формате: k
+SERVER: 2026/03/09 14:38:50 nextdate.go:39: Ошибка в NextDate: ошибка в формате: ooops
+SERVER: 2026/03/09 14:38:50 nextdate.go:39: Ошибка в NextDate: ошибка парсинга date: parsing time "15000156": day out of range
+SERVER: 2026/03/09 14:38:50 nextdate.go:39: Ошибка в NextDate: ошибка парсинга date: parsing time "ooops" as "20060102": cannot parse "ooops" as "2006"
+SERVER: 2026/03/09 14:38:50 nextdate.go:39: Ошибка в NextDate: для правила d требуется указать интервал
+SERVER: 2026/03/09 14:38:51 nextdate.go:39: Ошибка в NextDate: превышен максимально допустимый интервал (400)
+SERVER: 2026/03/09 14:38:51 nextdate.go:39: Ошибка в NextDate: недопустимое значение: 40
+SERVER: 2026/03/09 14:38:51 nextdate.go:39: Ошибка в NextDate: недопустимое значение: -3
+SERVER: 2026/03/09 14:38:51 nextdate.go:39: Ошибка в NextDate: недопустимое значение в дне недели: 8
+SERVER: 2026/03/09 14:38:51 task.go:76: Не указан идентификатор
+SERVER: 2026/03/09 14:38:51 task.go:232: Ошибка в расчётах NextDate: ошибка в формате: ooops
+SERVER: 2026/03/09 14:38:51 task.go:70: Ошибка получения задач: задача с ID 30 не найдена
+SERVER: 2026/03/09 14:38:51 task.go:70: Ошибка получения задач: задача с ID 32 не найдена
+SERVER: 2026/03/09 14:38:51 task.go:194: Не указан идентификатор
+SERVER: 2026/03/09 14:38:51 task.go:199: Ошибка удаления задачи: задача с ID wjhgese не найдена
+SERVER: 2026/03/09 14:41:16 task.go:109: Ошибка в расчётах NextDate: для правила W не указаны дни недели
+SERVER: 2026/03/09 14:41:16 task.go:109: Ошибка в расчётах NextDate: ошибка в формате: ooops
+SERVER: 2026/03/09 14:41:16 nextdate.go:32: параметр repeat пустой
+SERVER: 2026/03/09 14:41:16 nextdate.go:39: Ошибка в NextDate: ошибка в формате: k
+SERVER: 2026/03/09 14:41:16 nextdate.go:39: Ошибка в NextDate: ошибка в формате: ooops
+SERVER: 2026/03/09 14:41:16 nextdate.go:39: Ошибка в NextDate: ошибка парсинга date: parsing time "15000156": day out of range
+SERVER: 2026/03/09 14:41:16 nextdate.go:39: Ошибка в NextDate: ошибка парсинга date: parsing time "ooops" as "20060102": cannot parse "ooops" as "2006"
+SERVER: 2026/03/09 14:41:16 nextdate.go:39: Ошибка в NextDate: для правила d требуется указать интервал
+SERVER: 2026/03/09 14:41:16 nextdate.go:39: Ошибка в NextDate: превышен максимально допустимый интервал (400)
+SERVER: 2026/03/09 14:41:16 nextdate.go:39: Ошибка в NextDate: недопустимое значение: 40
+SERVER: 2026/03/09 14:41:16 nextdate.go:39: Ошибка в NextDate: недопустимое значение: -3
+SERVER: 2026/03/09 14:41:16 nextdate.go:39: Ошибка в NextDate: недопустимое значение в дне недели: 8
+SERVER: 2026/03/09 14:41:16 task.go:76: Не указан идентификатор
+SERVER: 2026/03/09 14:41:16 task.go:232: Ошибка в расчётах NextDate: ошибка в формате: ooops
+SERVER: 2026/03/09 14:41:16 task.go:70: Ошибка получения задач: задача с ID 49 не найдена
+SERVER: 2026/03/09 14:41:16 task.go:70: Ошибка получения задач: задача с ID 51 не найдена
+SERVER: 2026/03/09 14:41:16 task.go:194: Не указан идентификатор
+SERVER: 2026/03/09 14:41:16 task.go:199: Ошибка удаления задачи: задача с ID wjhgese не найдена
+SERVER: 2026/03/09 15:30:43 task.go:110: Ошибка в расчётах NextDate: для правила W не указаны дни недели
+SERVER: 2026/03/09 15:30:43 task.go:110: Ошибка в расчётах NextDate: ошибка в формате: ooops
+SERVER: 2026/03/09 15:30:44 nextdate.go:32: параметр repeat пустой
+SERVER: 2026/03/09 15:30:44 nextdate.go:39: Ошибка в NextDate: ошибка в формате: k
+SERVER: 2026/03/09 15:30:44 nextdate.go:39: Ошибка в NextDate: ошибка в формате: ooops
+SERVER: 2026/03/09 15:30:44 nextdate.go:39: Ошибка в NextDate: ошибка парсинга date: parsing time "15000156": day out of range
+SERVER: 2026/03/09 15:30:44 nextdate.go:39: Ошибка в NextDate: ошибка парсинга date: parsing time "ooops" as "20060102": cannot parse "ooops" as "2006"
+SERVER: 2026/03/09 15:30:44 nextdate.go:39: Ошибка в NextDate: для правила d требуется указать интервал
+SERVER: 2026/03/09 15:30:44 nextdate.go:39: Ошибка в NextDate: превышен максимально допустимый интервал (400)
+SERVER: 2026/03/09 15:30:44 nextdate.go:39: Ошибка в NextDate: недопустимое значение: 40
+SERVER: 2026/03/09 15:30:44 nextdate.go:39: Ошибка в NextDate: недопустимое значение: -3
+SERVER: 2026/03/09 15:30:44 nextdate.go:39: Ошибка в NextDate: недопустимое значение в дне недели: 8
+SERVER: 2026/03/09 15:30:44 task.go:77: Не указан идентификатор
+SERVER: 2026/03/09 15:30:44 task.go:233: Ошибка в расчётах NextDate: ошибка в формате: ooops
+SERVER: 2026/03/09 15:30:44 task.go:71: Ошибка получения задач: задача с ID 68 не найдена
+SERVER: 2026/03/09 15:30:44 task.go:71: Ошибка получения задач: задача с ID 70 не найдена
+SERVER: 2026/03/09 15:30:44 task.go:195: Не указан идентификатор
+SERVER: 2026/03/09 15:30:44 task.go:200: Ошибка удаления задачи: задача с ID wjhgese не найдена
+SERVER: 2026/03/09 15:43:18 task.go:114: Ошибка в расчётах NextDate: для правила W не указаны дни недели
+SERVER: 2026/03/09 15:43:18 task.go:114: Ошибка в расчётах NextDate: ошибка в формате: ooops
+SERVER: 2026/03/09 15:43:18 nextdate.go:34: параметр repeat пустой
+SERVER: 2026/03/09 15:43:18 nextdate.go:41: Ошибка в NextDate: ошибка в формате: k
+SERVER: 2026/03/09 15:43:18 nextdate.go:41: Ошибка в NextDate: ошибка в формате: ooops
+SERVER: 2026/03/09 15:43:18 nextdate.go:41: Ошибка в NextDate: ошибка парсинга date: parsing time "15000156": day out of range
+SERVER: 2026/03/09 15:43:18 nextdate.go:41: Ошибка в NextDate: ошибка парсинга date: parsing time "ooops" as "20060102": cannot parse "ooops" as "2006"
+SERVER: 2026/03/09 15:43:18 nextdate.go:41: Ошибка в NextDate: для правила d требуется указать интервал
+SERVER: 2026/03/09 15:43:18 nextdate.go:41: Ошибка в NextDate: превышен максимально допустимый интервал (400)
+SERVER: 2026/03/09 15:43:18 nextdate.go:41: Ошибка в NextDate: недопустимое значение: 40
+SERVER: 2026/03/09 15:43:18 nextdate.go:41: Ошибка в NextDate: недопустимое значение: -3
+SERVER: 2026/03/09 15:43:18 nextdate.go:41: Ошибка в NextDate: недопустимое значение в дне недели: 8
+SERVER: 2026/03/09 15:43:18 task.go:79: Не указан идентификатор
+SERVER: 2026/03/09 15:43:18 task.go:245: Ошибка в расчётах NextDate: ошибка в формате: ooops
+SERVER: 2026/03/09 15:43:18 task.go:73: Ошибка получения задач: задача с ID 87 не найдена
+SERVER: 2026/03/09 15:43:18 task.go:73: Ошибка получения задач: задача с ID 89 не найдена
+SERVER: 2026/03/09 15:43:18 task.go:205: Не указан идентификатор
+SERVER: 2026/03/09 15:43:18 task.go:210: Ошибка удаления задачи: задача с ID wjhgese не найдена
