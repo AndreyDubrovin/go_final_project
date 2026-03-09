@@ -2,6 +2,7 @@ package main
 
 import (
 	"log"
+	"net/http"
 	"os"
 
 	"github.com/AndreyDubrovin/go_final_project/pkg/db"
@@ -39,7 +40,8 @@ func main() {
 	// создаём сервер
 	s := server.NewServer(db, serverPort, logger)
 	// запускаем сервер
-	if err := s.HTTPServer.ListenAndServe(); err != nil {
-		logger.Fatal(err)
+	if err := s.HTTPServer.ListenAndServe(); err != nil && err != http.ErrServerClosed {
+		logger.Printf("HTTP server failed: %v", err)
+		os.Exit(1)
 	}
 }

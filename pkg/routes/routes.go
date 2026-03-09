@@ -23,25 +23,5 @@ func SetupRoutes(r *chi.Mux, handler *handlers.Handlers) {
 	})
 
 	// Статические файлы
-	r.Handle("/css/*", http.StripPrefix("/css/", http.FileServer(http.Dir(webDir+"css"))))
-	r.Handle("/js/*", http.StripPrefix("/js/", http.FileServer(http.Dir(webDir+"js"))))
-
-	// HTML страницы
-	r.Get("/", func(w http.ResponseWriter, r *http.Request) {
-		http.ServeFile(w, r, webDir+"index.html")
-	})
-	r.Get("/index.html", func(w http.ResponseWriter, r *http.Request) {
-		http.ServeFile(w, r, webDir+"index.html")
-	})
-	r.Get("/login", func(w http.ResponseWriter, r *http.Request) {
-		http.ServeFile(w, r, webDir+"login.html")
-	})
-	r.Get("/login.html", func(w http.ResponseWriter, r *http.Request) {
-		http.ServeFile(w, r, webDir+"login.html")
-	})
-	// Favicon
-	r.Get("/favicon.ico", func(w http.ResponseWriter, r *http.Request) {
-		http.ServeFile(w, r, webDir+"favicon.ico")
-	})
-
+	r.Handle("/*", http.FileServer(http.Dir(webDir)))
 }

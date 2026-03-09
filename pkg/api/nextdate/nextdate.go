@@ -10,6 +10,8 @@ import (
 	"time"
 )
 
+var DateFormat = "20060102"
+
 type NextDateHandler struct {
 	logger *log.Logger
 }
@@ -50,12 +52,12 @@ func (h *NextDateHandler) GetNextDate(w http.ResponseWriter, r *http.Request) {
 
 func NextDate(now, date, repeat string) (string, error) {
 	// текущая дата
-	parsedNow, err := time.Parse("20060102", now)
+	parsedNow, err := time.Parse(DateFormat, now)
 	if err != nil {
 		return "", fmt.Errorf("ошибка парсинга now: %w", err)
 	}
 	// установленная дата задачи
-	parsedDate, err := time.Parse("20060102", date)
+	parsedDate, err := time.Parse(DateFormat, date)
 	if err != nil {
 		return "", fmt.Errorf("ошибка парсинга date: %w", err)
 	}
@@ -102,7 +104,7 @@ func repeatD(intervals []string, parsedNow, parsedDate time.Time) (string, error
 			break
 		}
 	}
-	return parsedDate.Format("20060102"), nil
+	return parsedDate.Format(DateFormat), nil
 }
 
 func repeatY(intervals []string, parsedNow, parsedDate time.Time) (string, error) {
@@ -115,7 +117,7 @@ func repeatY(intervals []string, parsedNow, parsedDate time.Time) (string, error
 			break
 		}
 	}
-	return parsedDate.Format("20060102"), nil
+	return parsedDate.Format(DateFormat), nil
 }
 
 func repeatW(intervals []string, parsedNow, parsedDate time.Time) (string, error) {
@@ -170,7 +172,7 @@ func repeatW(intervals []string, parsedNow, parsedDate time.Time) (string, error
 			resultDate = date
 		}
 	}
-	return resultDate.Format("20060102"), nil
+	return resultDate.Format(DateFormat), nil
 }
 
 func repeatM(intervals []string, parsedNow, parsedDate time.Time) (string, error) {
@@ -255,7 +257,7 @@ func checkTwoConditions(intervals []string, parsedNow, parsedDate time.Time) (st
 			resultDate = date
 		}
 	}
-	return resultDate.Format("20060102"), nil
+	return resultDate.Format(DateFormat), nil
 }
 
 func checkThreeConditions(intervals []string, parsedNow, parsedDate time.Time) (string, error) {
@@ -263,7 +265,6 @@ func checkThreeConditions(intervals []string, parsedNow, parsedDate time.Time) (
 	days := make([]int, 0, 12)   // числа дней в запросе
 	dateNumbersIntervals := strings.Split(intervals[1], ",")
 	monthNumbersIntervals := strings.Split(intervals[2], ",")
-	fmt.Println("dateNumbersIntervals:", dateNumbersIntervals, " monthNumbersIntervals:", monthNumbersIntervals)
 	// если дата меньше текущей, то отталкиваеся от текущий и ищем ближайшую следующую дату.
 	checkDate := parsedNow
 	if AfterNow(parsedDate, parsedNow) { // если установленная дата больше текущий то используем установленную
@@ -306,7 +307,7 @@ func checkThreeConditions(intervals []string, parsedNow, parsedDate time.Time) (
 			0, 0, 0, 0,
 			time.UTC,
 		)
-		return newDate.Format("20060102"), nil
+		return newDate.Format(DateFormat), nil
 	}
 	sort.Ints(months)
 	sort.Ints(days)
@@ -319,7 +320,7 @@ func checkThreeConditions(intervals []string, parsedNow, parsedDate time.Time) (
 			0, 0, 0, 0,
 			time.UTC,
 		)
-		return newDate.Format("20060102"), nil
+		return newDate.Format(DateFormat), nil
 	}
 	return "", nil
 }

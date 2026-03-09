@@ -37,7 +37,6 @@ func (r *TaskRepository) SearchTasks(text string, limit int) (*[]models.Task, er
 			return nil, err
 		}
 		resultDate := t.Format("20060102")
-		fmt.Println("result", resultDate)
 		query = `
         SELECT id, date, title, comment, repeat 
         FROM scheduler 

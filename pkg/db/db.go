@@ -37,13 +37,15 @@ func ConnectToDB(logger *log.Logger) (*sql.DB, error) {
 
 	err = db.Ping()
 	if err != nil {
-		return nil, err
+		db.Close() // Закрываем при ошибке пинга
+		return nil, fmt.Errorf("не удалось подключиться к БД: %w", err)
 	}
 
 	if newDb == true {
 		err := CreateTableInDb(db, logger)
 		if err != nil {
-			return nil, err
+			db.Close() // Закрываем при ошибке создания таблиц
+			return nil, fmt.Errorf("ошибка создания таблиц: %w", err)
 		}
 	}
 	return db, nil
